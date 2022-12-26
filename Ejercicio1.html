@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<h1>1ºDAW - Entornos de desarrollo</h1>
+<h2>Práctica 4: Trabajando con Git</h2>
+<h3>Explicación de la parte principal de temas avanzados 3</h3>
+<h3>En este ejercicio el objetivo es lograr  modificar C2, pero sin usar rebase -i.</h3>
+<p>En primer lugar se realiza un git checkout main para comprobar el estado de la rama principal</p>
+<a href="https://drive.google.com/file/d/1KkR5_hhkqXnufZR7E2HFwRtJEp-wwwBd/view?usp=share_link">Link para ver el resultado</a>
+
+<p>En segundo lugar utilizo el comando git cherry-pick en C2 para crear una nueva rama (C2’) independiente a la principal</p>
+
+<a href="https://drive.google.com/file/d/1h5mA-Wl5zPl6Jmsi9pB5BM-n8hDphYcx/view?usp=share_link">Link para ver el resultado</a>
+
+<p>En tercer lugar utilizamos un git commit --amend para poder modificar el commit más reciente(C2’), permitiendo combinar cambios por etapas con el commit anterior en lugar de crear un commit completamente nuevo, creando así C2” y ocultando C’ </p>
+
+<a href="https://drive.google.com/file/d/151KaFci19sCHyaFRmZwA1dQqhIObjl7X/view?usp=share_link">Link para ver el resultado</a>
+
+<p>Por último vuelvo a utilizar el comando git cherry-pick en C3 para tener así un C3” nuevo ligado al C2” creado anteriormente. De esta forma se a partir de C1 habrá 2 ramas distintas, la original y la que has modificado y se quedará oculto el C2’ creado anteriormente</p>
+
+<a href="https://drive.google.com/file/d/1NRbFYxdC3TNx46wjOL7q57kNEe7PQBb9/view?usp=share_link">Link para ver el resultado</a>
+
